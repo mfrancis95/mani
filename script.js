@@ -9,7 +9,8 @@ const emojis = [
     '🤣',
 ];
 
-document.getElementById('emoji').innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+document.getElementById('emoji').innerHTML = emoji.repeat(Math.floor(Math.random() * emojis.length));
 
 const shifts = [
     new Date('2024-04-06'),
