@@ -1,12 +1,16 @@
 const emojis = [
     '🐻',
     '🐈',
+    '🐱',
+    '😺',
+    '😹',
+    '😻',
     '🐕',
     '😂',
     '🫶',
     '💋',
     '❤️',
-    '🤣',
+    '🤣'
 ];
 
 const emoji = emojis[Math.floor(Math.random() * emojis.length)];
