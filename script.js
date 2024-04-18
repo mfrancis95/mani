@@ -1,3 +1,16 @@
+const emojis = [
+    '🐻',
+    '🐈',
+    '🐕',
+    '😂',
+    '🫶',
+    '💋',
+    '❤️',
+    '🤣',
+];
+
+document.getElementById('emoji').innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+
 const shifts = [
     new Date('2024-04-06'),
     new Date('2024-04-07'),
