@@ -42,6 +42,7 @@ const shifts = [
 ];
 
 const now = new Date();
+const totalInCurrentMonth = shifts.findLastIndex(element => element.getMonth() === now.getMonth()) + 1;
 const index = shifts.findIndex(element => element >= now);
 
-document.getElementById('shifts').innerHTML = index === -1 ? shifts.length : shifts.length - index;
+document.getElementById('shifts').innerHTML = index === -1 ? totalInCurrentMonth : totalInCurrentMonth - index;
