@@ -17,9 +17,6 @@ const emoji = emojis[Math.floor(Math.random() * emojis.length)];
 document.getElementById('emoji').innerHTML = emoji.repeat(Math.floor(Math.random() * emojis.length));
 
 const shifts = [
-    new Date('2024-04-27'),
-    new Date('2024-04-28'),
-    new Date('2024-04-29'),
     new Date('2024-05-01'),
     new Date('2024-05-02'),
     new Date('2024-05-03'),
