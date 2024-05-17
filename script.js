@@ -43,3 +43,8 @@ const totalInCurrentMonth = shifts.findLastIndex(element => element.getMonth() =
 const index = shifts.findIndex(element => element >= now);
 
 document.getElementById('shifts').innerHTML = index === -1 ? totalInCurrentMonth : totalInCurrentMonth - index;
+
+const severance = new Date('2024-08-02');
+const difference = severance - now;
+    
+document.getElementById('severance').innerHTML = Math.floor(difference / (1000 * 60 * 60 * 24));
